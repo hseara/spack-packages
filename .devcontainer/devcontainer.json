@@ -10,6 +10,7 @@
     }
   ],
   "onCreateCommand": {
+    "install-python-tools": "apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y python3-pip isort",
     "setup-spack-bashrc": "echo '. /opt/spack/share/spack/setup-env.sh' >> /root/.bashrc",
     "setup-spack-profile": "echo '. /opt/spack/share/spack/setup-env.sh' >> /etc/profile",
     "add-workspace-as-repo": "/opt/spack/bin/spack repo add --scope site ${containerWorkspaceFolder}/repos/spack_repo/builtin",
