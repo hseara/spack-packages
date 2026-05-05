@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainer.base.schema.json",
   "image": "ghcr.io/spack/ubuntu-noble:develop",
+  "runArgs": ["--gpus=all"],
   "mounts": [
     {
       "type": "volume",
